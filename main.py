@@ -214,7 +214,7 @@ button:active {
 }
 
 .btn-secondary:hover {
-    background: #4b5563;
+    background: #8345ff;
 }
 
 /* Tables */
