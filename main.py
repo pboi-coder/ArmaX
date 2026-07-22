@@ -173,7 +173,7 @@ input[type="text"]:focus, input[type="search"]:focus {
 
 button[type="submit"], .form-group button {
     padding: 12px 24px;
-    background: #252A38;
+    background: #8345ff;
     color: black;
     border: none;
     border-radius: 30px;
