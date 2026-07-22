@@ -29,7 +29,7 @@ body {
 
 /* Header & Navigation */
 header {
-    background: linear-gradient(135deg, #1E1F22 0%, #111214 100%);
+    background-color: #1E1F22;
     color: white;
     padding: 25px 0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
