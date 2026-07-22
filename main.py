@@ -38,6 +38,7 @@ header h1 {
     font-size: 28px;
     font-weight: 700;
     letter-spacing: -0.5px;
+    text-align: center;
 }
 
 .nav-tabs {
@@ -369,7 +370,7 @@ def header_nav():
             cls="container",
             style="color: white;"
         )(
-            H1("🔍 Criminal Database Analyzer")
+            H1("Arma-X")
         )
     )
 
