@@ -1,11 +1,3 @@
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
 from fasthtml.common import *
 from database import (
     search_name, search_case, duplicate_cases, missing_values,
@@ -24,8 +16,8 @@ app, rt = fast_app(
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    background-image: linear-gradient(to right top, #18030f, #241421, #302134, #3a2f48, #403e5e, #445177, #436690, #3d7ca7, #329bc2, #2bbbd8, #3adbe8, #5ffbf1);
+    background: linear-gradient(135deg, #313338 0%, #c3cfe2 100%);
+    background-image: linear-gradient(to right top, #1E1F22, #241421, #302134, #3a2f48, #403e5e, #445177, #436690, #3d7ca7, #329bc2, #2bbbd8, #3adbe8, #5ffbf1);
     min-height: 100vh;
 }
 
@@ -37,7 +29,7 @@ body {
 
 /* Header & Navigation */
 header {
-    background: linear-gradient(135deg, #18030F 0%, #000000 100%);
+    background: linear-gradient(135deg, #1E1F22 0%, #111214 100%);
     color: white;
     padding: 25px 0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -59,7 +51,7 @@ header h1 {
 
 .nav-tabs a, .nav-tabs button {
     padding: 10px 16px;
-    background: rgba(255,255,255,0.15);
+    background: rgba(114,137,218,0.18);
     color: white;
     border: 2px solid transparent;
     border-radius: 6px;
@@ -78,8 +70,8 @@ header h1 {
 }
 
 .nav-tabs a:hover, .nav-tabs button:hover {
-    background: rgba(255,255,255,0.25);
-    border-color: rgba(255,255,255,0.5);
+    background: rgba(114,137,218,0.30);
+    border-color: rgba(114,137,218,0.55);
 }
 
 /* Dashboard Cards */
@@ -91,7 +83,7 @@ header h1 {
 }
 
 .card {
-    background: white;
+    background: #2B2D31;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -106,7 +98,7 @@ header h1 {
 .card-title {
     font-size: 14px;
     font-weight: 600;
-    color: #666;
+    color: #949BA4;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 12px;
@@ -115,19 +107,19 @@ header h1 {
 .card-value {
     font-size: 32px;
     font-weight: 700;
-    color: #2c1270;
+    color: #5865F2;
     line-height: 1;
 }
 
 .card-meta {
     font-size: 12px;
-    color: #999;
+    color: #B5BAC1;
     margin-top: 8px;
 }
 
 /* Forms */
 .form-section {
-    background: white;
+    background: #2B2D31;
     padding: 24px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -137,7 +129,7 @@ header h1 {
 .form-section h2 {
     font-size: 18px;
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: #F2F3F5;
     font-weight: 600;
 }
 
@@ -152,7 +144,7 @@ input[type="text"], input[type="search"] {
     flex: 1;
     min-width: 0;
     padding: 12px 14px;
-    border: 2px solid #e0e0e0;
+    border: 2px solid #404249;
     border-radius: 30px;
     font-size: 14px;
     transition: border-color 0.3s ease;
@@ -167,13 +159,13 @@ input[type="text"]::placeholder, input[type="search"]::placeholder {
 
 input[type="text"]:focus, input[type="search"]:focus {
     outline: none;
-    border-color: #b289f6;
-    box-shadow: 0 0 0 3px rgba(178, 137, 246, 0.1);
+    border-color: #7289DA;
+    box-shadow: 0 0 0 3px rgba(114, 137, 218, 0.1);
 }
 
 button[type="submit"], .form-group button {
     padding: 12px 24px;
-    background: #8345ff;
+    background: #5865F2;
     color: black;
     border: none;
     border-radius: 30px;
@@ -188,7 +180,7 @@ button[type="submit"], .form-group button {
 
 button {
     padding: 12px 24px;
-    background: #b289f6;
+    background: #7289DA;
     color: white;
     border: none;
     border-radius: 6px;
@@ -200,7 +192,7 @@ button {
 }
 
 button:hover {
-    background: #6336bf;
+    background: #4752C4;
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(30, 64, 175, 0.25);
 }
@@ -214,29 +206,29 @@ button:active {
 }
 
 .btn-secondary:hover {
-    background: #6336bf;
+    background: #4752C4;
 }
 
 /* Tables */
 table {
     width: 100%;
     border-collapse: collapse;
-    background: white;
+    background: #2B2D31;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 thead {
-    background: #f9fafb;
-    border-bottom: 2px solid #e0e0e0;
+    background: #2B2D31;
+    border-bottom: 2px solid #404249;
 }
 
 th {
     padding: 12px 16px;
     text-align: left;
     font-weight: 600;
-    color: #666;
+    color: #949BA4;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -244,12 +236,12 @@ th {
 
 td {
     padding: 12px 16px;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #3A3C43;
     font-size: 14px;
 }
 
 tbody tr:hover {
-    background: #f9fafb;
+    background: #2B2D31;
 }
 
 tbody tr:last-child td {
@@ -282,7 +274,7 @@ tbody tr:last-child td {
 
 /* Results Section */
 .results-section {
-    background: white;
+    background: #2B2D31;
     padding: 24px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -291,7 +283,7 @@ tbody tr:last-child td {
 .results-section h2 {
     font-size: 18px;
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: #F2F3F5;
     font-weight: 600;
 }
 
@@ -299,7 +291,7 @@ tbody tr:last-child td {
 .back-link {
     display: inline-block;
     padding: 10px 16px;
-    color: #b289f6;
+    color: #7289DA;
     text-decoration: none;
     font-weight: 500;
     margin-top: 20px;
@@ -316,25 +308,25 @@ tbody tr:last-child td {
 .empty-state {
     text-align: center;
     padding: 40px 20px;
-    color: #999;
+    color: #B5BAC1;
 }
 
 .empty-state h3 {
-    color: #666;
+    color: #949BA4;
     margin-bottom: 10px;
     font-size: 18px;
 }
 
 /* Pre/Code Blocks */
 pre {
-    background: #f5f7fa;
+    background: #313338;
     padding: 16px;
     border-radius: 6px;
     overflow-x: auto;
     font-size: 12px;
     line-height: 1.5;
-    color: #2c3e50;
-    border-left: 4px solid #b289f6;
+    color: #F2F3F5;
+    border-left: 4px solid #7289DA;
 }
 
 /* Responsive */
