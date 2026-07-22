@@ -200,7 +200,7 @@ button {
 }
 
 button:hover {
-    background: #8345ff;
+    background: #6336bf;
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(30, 64, 175, 0.25);
 }
@@ -214,7 +214,7 @@ button:active {
 }
 
 .btn-secondary:hover {
-    background: #8345ff;
+    background: #6336bf;
 }
 
 /* Tables */
