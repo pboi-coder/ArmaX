@@ -35,7 +35,7 @@ header {
 }
 
 header h1 {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 700;
     letter-spacing: -0.5px;
     text-align: center;
