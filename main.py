@@ -16,9 +16,7 @@ app, rt = fast_app(
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background: linear-gradient(135deg, #313338 0%, #c3cfe2 100%);
-    background-image: linear-gradient(to right top, #1E1F22, #241421, #302134, #3a2f48, #403e5e, #445177, #436690, #3d7ca7, #329bc2, #2bbbd8, #3adbe8, #5ffbf1);
-    min-height: 100vh;
+    background-color: #1E1F22;
 }
 
 .container {
@@ -29,7 +27,7 @@ body {
 
 /* Header & Navigation */
 header {
-    background-color: #1E1F22;
+    background-color: #3a3c42;
     color: white;
     padding: 25px 0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
